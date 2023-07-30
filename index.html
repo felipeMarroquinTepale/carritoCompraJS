@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    #sidebar {
+      width: 20%;
+      height: 100vh;
+      background: #5e31da;
+    }
+    .nav-item .nav-link.active{
+        background: #ffffff;
+        color: #5e31da;
+    }
+    .nav-item .nav-link{
+        color: #ffffff;
+    }
+
+    #global{
+        overflow-y: scroll;
+        height:45rem;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="d-flex" style="background-color: #5e31da;">
+        <div id="sidebar">
+            <div class="fs-4 fw-bold text-center mt-5">
+                Cardi Shop
+            </div>
+
+            <div class="h-50 d-flex align-items-center mt-2">
+                <ul class="nav nav-pills flex-column ms-5 gap-4 w-100" >
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold active" id="All-products" aria-current="page" href="#"><i class="bi bi-hand-index-thumb"></i> Todos los productos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" id="abrigos-products" href="#"><i class="bi bi-hand-index-thumb"></i> Abrigos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" id="camiseta-products" href="#"><i class="bi bi-hand-index-thumb"></i> Camisetas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" id="pantalones-products"  href="#"><i class="bi bi-hand-index-thumb"></i> Pantalones</a>
+                    </li>
+
+                    <li class="nav-item mt-4">
+                        <a class="nav-link fs-5 fw-bold"  href="./carrito.html"><i class="bi bi-cart2"></i> Carrito <span id="numero-products"> 0</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <footer class="position-absolute bottom-0 start-0">
+                <p class="texto-footer" style="color: #ffffff;">© 2022 copyright</p>
+            </footer>
+
+        </div>
+
+
+
+        <div class="content w-100 my-3 me-3 rounded-6" style="background-color: white; border-radius: 100px;">
+            <section class="p-3" >
+                <div class="container mt-5">
+                    <h2>Todos los productos</h2>
+                    <div class="row">
+                        <div class="col-md-12 p-3">
+                            <div class="row row-cols-1 row-cols-md-3 g-4 p-2" id="global" >
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
